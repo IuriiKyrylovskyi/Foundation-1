@@ -1,0 +1,84 @@
+@import "variables";
+@import "null";
+@import "breakpoints";
+//<Подключаем шрифты>=========================================================
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"); //<Шрифт по умолчанию>==============================
+
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>==============================================
+body {
+	color: #2b292d;
+	font-size: 24px;
+}
+//<ОБОЛОЧКА>========================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+//</ОБОЛОЧКА>==================================================================
+
+//<ОСНОВНАЯ СЕТКА>====================================
+._container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 10px;
+	// @media (max-width: $md1+px) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2+px) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3+px) {
+	// 	max-width: none;
+	// }
+}
+.btn {
+	height: 48px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 13px;
+	padding: 0 28px;
+	margin: 0 5px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+		inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__blue {
+		color: #fff;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%), #3040c4;
+		background-blend-mode: overlay, normal;
+		margin-bottom: 12px;
+		@include br-pad {
+			margin-bottom: 0;
+		}
+	}
+
+	&__white {
+		color: #000;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%), #ffffff;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>=============================================
+@import "header";
+@import "build";
+@import "what";
+@import "brands";
+@import "acquire-mob";
+@import "features";
+@import "team";
+@import "communicate";
+@import "audience";
+@import "trusted";
+@import "hiring";
+@import "start";
+@import "footer";
+
+//</ОСНОВНОЙ БЛОК>=============================================================

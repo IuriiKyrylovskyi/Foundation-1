@@ -1,0 +1,115 @@
+.communicate {
+	padding: 50px 5px;
+	@include br-pad {
+		padding: 110px 0;
+	}
+
+	&__top-row {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 150px;
+			height: 1px;
+			background: hsla(0, 0%, 0%, 0.1);
+		}
+		@include br-pad {
+			display: flex;
+		}
+	}
+
+	&__top-column {
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		@include br-pad {
+			flex: 0 0 50%;
+		}
+	}
+
+	&__label {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 34px;
+		color: #0189d1;
+		margin: 17px 0 18px;
+		@include br-pad {
+			margin: 17px 0 24px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 40px;
+		letter-spacing: -0.357143px;
+		@include br-pad {
+			max-width: 460px;
+		}
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 34px;
+		margin: 18px 0 30px;
+		@include br-pad {
+			margin: 30px 0 39px;
+			max-width: 460px;
+		}
+	}
+
+	&__btn {
+		display: inline-flex;
+		margin-bottom: 40px;
+		border-radius: 2px;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+	&__img-caption {
+		font-size: 14px;
+		line-height: 22px;
+		text-align: center;
+		color: rgba(43, 41, 45, 0.6);
+		padding: 17px 0 40px;
+	}
+
+	&__bottom-row {
+		@include br-pad {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 -15px;
+			width: 100%;
+		}
+	}
+
+	&__bottom-colunm {
+		font-size: 18px;
+		line-height: 26px;
+		margin-top: 33px;
+		@include br-pad {
+			font-size: 16px;
+			flex: 0 1 33.333%;
+			margin: 41px 15px 0;
+		}
+	}
+
+	&__bottom-info {
+		letter-spacing: 1px;
+		span {
+			font-weight: 700;
+		}
+	}
+
+	&__bottom-link {
+		display: block;
+		font-weight: 700;
+		color: #3040c4;
+		text-decoration: underline;
+		margin-top: 8px;
+	}
+}

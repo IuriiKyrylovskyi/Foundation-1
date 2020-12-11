@@ -1,0 +1,163 @@
+.footer {
+	margin: 40px 5px 22px;
+	@include br-pad {
+		margin: 44px 0 0px;
+	}
+	&__top {
+		@include br-pad {
+			border-bottom: 1px solid #e3e3e3;
+		}
+	}
+	&__container {
+		@include br-pad {
+			display: flex;
+			&--bottom {
+				justify-content: space-between;
+			}
+		}
+	}
+
+	&__top-column {
+		@include br-pad {
+			&:nth-child(1) {
+				flex: 0 0 45%;
+			}
+			&:nth-child(2) {
+				flex: 0 0 20%;
+				min-width: 280px;
+			}
+		}
+	}
+
+	&__logo-column {
+		flex-direction: column;
+		@include br-pad {
+			flex-direction: row;
+		}
+	}
+
+	&__logo {
+		width: 60px;
+		height: 60px;
+		@include br-pad {
+			margin: 8px 15px 8px 0;
+		}
+	}
+
+	&__logo-info {
+		text-align: center;
+		line-height: 25px;
+		@include br-pad {
+			text-align: left;
+		}
+	}
+
+	&__logo-label {
+		font-size: 20px;
+		font-weight: 700;
+		margin: 20px 0 5px;
+		@include br-pad {
+			margin: 0;
+		}
+	}
+
+	&__logo-text {
+		display: block;
+		font-size: 18px;
+	}
+
+	&__top-text {
+		display: none;
+		font-size: 18px;
+		line-height: 26px;
+		color: rgba(43, 41, 45, 0.6);
+		max-width: 360px;
+		margin: 26px 0 25px;
+		@include br-pad {
+			display: block;
+		}
+	}
+
+	&__top-stores-box {
+		text-align: center;
+		margin: 31px 0 40px;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 150%;
+			border-bottom: 1px solid #e3e3e3;
+			bottom: -40px;
+			left: -25%;
+		}
+		@include br-pad {
+			text-align: left;
+			margin: 31px -5px 50px;
+			&:after {
+				content: "";
+				display: none;
+			}
+		}
+	}
+
+	&__top-store {
+		margin: 0 5px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__top-title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 28px;
+		padding: 30px 0 18px;
+	}
+
+	&__top-link {
+		display: block;
+		font-size: 18px;
+		line-height: 35px;
+		color: rgba(43, 41, 45, 0.6);
+	}
+
+	&__bottom {
+		@include br-pad {
+			display: flex;
+			align-items: center;
+			height: 50px;
+		}
+	}
+
+	&__bottom-column {
+		display: flex;
+		margin-top: 30px;
+		@include br-pad {
+			margin-top: 0;
+		}
+	}
+
+	&__bottom-link {
+		font-size: 14px;
+		line-height: 22px;
+		color: rgba(43, 41, 45, 0.6);
+		margin-right: 20px;
+	}
+}
+
+.footer-socials {
+	align-items: flex-end;
+	font-size: 0;
+	&__item {
+		margin-right: 20px;
+	}
+
+	&__link {
+		img {
+			max-width: 100%;
+		}
+	}
+	@include br-pad {
+		margin-bottom: 5px;
+	}
+}

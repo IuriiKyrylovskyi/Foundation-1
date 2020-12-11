@@ -1,0 +1,105 @@
+.start {
+	background: #f4f5f7;
+	padding: 50px 5px;
+	@include br-pad {
+		padding: 72px 0px;
+	}
+	&__row {
+		@include br-pad {
+			display: flex;
+		}
+	}
+
+	&__column {
+		@include br-pad {
+			&:nth-child(1) {
+				flex: 0 0 45%;
+			}
+			&:nth-child(2) {
+				flex: 0 1 55%;
+				max-width: 555px;
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 40px;
+		text-align: center;
+		letter-spacing: -0.25px;
+		margin: 40px 0 18px;
+		@include br-pad {
+			text-align-last: left;
+			margin: 33px 0 12px;
+		}
+	}
+
+	&__text {
+		font-size: 22px;
+		line-height: 32px;
+		@include br-pad {
+			text-align-last: left;
+		}
+	}
+
+	&__form {
+		margin-top: 40px;
+		@include br-pad {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 26px;
+		}
+	}
+
+	&__btn {
+		margin: 12px 0 15px;
+		@include br-pad {
+			margin:0 0 0 10px;
+			
+		}
+	}
+	&__input {
+		font-size: 18px;
+		line-height: 13px;
+		text-align: center;
+		height: 48px;
+		font-size: 18px;
+		line-height: 13px;
+		padding: 0 20px;
+		background: #ffffff;
+		border: 1px solid rgba(43, 41, 45, 0.2);
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		@include br-pad {
+			flex: 1 0 auto;
+			max-width: 383px;
+			text-align: left;
+			justify-content: flex-start;
+			
+		}
+	}
+
+	&__form-text {
+		font-size: 14px;
+		line-height: 22px;
+		color: rgba(43, 41, 45, 0.6);
+		a {
+			color: #3040c4;
+			text-decoration: underline;
+		}
+		@include br-pad {
+			flex: 0 0 100%;
+			margin-top: 10px;
+		}
+	}
+}
